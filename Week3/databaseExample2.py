@@ -169,3 +169,10 @@ with con:
 	rows = cur.fetchall()
 	#for row in rows:    
 	#	print """%s %s %s""" % (row[0], row[1], row[2])
+	
+with con:
+	cur = con.cursor()    
+	cur.execute('SELECT p.neighborhood, p.pop1940, e.Construction FROM popANDdensity p, employment e WHERE p.neighborhood = e.neighborhood AND p.pop1940 between 0 and 1000 ')
+	rows = cur.fetchall()
+	#for row in rows:    
+	#	print """%s %s %s""" % (row[0], row[1], row[2])
