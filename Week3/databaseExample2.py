@@ -143,4 +143,29 @@ with con:
 	cur.execute('SELECT Name, Price FROM Cars WHERE Price = (SELECT MAX(Price) FROM Cars);')
 	rows = cur.fetchall()
 	#for row in rows:    
-	#	print """%s %s""" % (row[0], row[1])			
+	#	print """%s %s""" % (row[0], row[1])		
+
+############################
+## Basic Math 
+###########################		
+
+with con:
+	cur = con.cursor()    
+	cur.execute('SELECT Name, Price*1.1 FROM Cars ;')
+	rows = cur.fetchall()
+	#for row in rows:    
+	#	print """%s %s""" % (row[0], row[1])	
+	
+	
+	
+directoryForDB = "C:/Users/Pudders/Desktop/DBClass/" + "pittsburghData.db"
+con = lite.connect(directoryForDB)
+############################
+## JOIN (simple)
+###########################
+with con:
+	cur = con.cursor()    
+	cur.execute('SELECT p.neighborhood, p.pop1940, e.Construction FROM popANDdensity p, employment e WHERE p.neighborhood = e.neighborhood')
+	rows = cur.fetchall()
+	#for row in rows:    
+	#	print """%s %s %s""" % (row[0], row[1], row[2])
