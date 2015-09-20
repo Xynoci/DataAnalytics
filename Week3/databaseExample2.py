@@ -11,7 +11,7 @@ import os
 con = None
 
 
-directoryForDB = "C:/Users/Pudders/Desktop/DBClass/" + "carsDatabase.db"
+directoryForDB = "./" + "daLiteDb.db"
 
 con = lite.connect(directoryForDB)
 ############################

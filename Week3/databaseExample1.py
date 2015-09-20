@@ -12,11 +12,11 @@ con = None
 
 ## Creates a folder for the database
 ## Set directory to YOUR computer and folder
-directoryForDB = "C:/Users/Pudders/Desktop/DBClass/"
+directoryForDB = "./"
 if not os.path.exists(directoryForDB):
 	os.makedirs(directoryForDB)
 
-directoryForDB = directoryForDB + "carsDatabase.db"
+directoryForDB = directoryForDB + "daLiteDb.db"
 ## If database does not exist, creates items
 ## If database does exist, opens it
 con = lite.connect(directoryForDB)
