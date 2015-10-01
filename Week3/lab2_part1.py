@@ -76,7 +76,7 @@ con = None
 
 ## Creates a folder for the database
 ## Set directory to YOUR computer and folder
-directoryForDB = "./"
+directoryForDB = "/Users/Makone_Xia/Documents/TTKN/"
 if not os.path.exists(directoryForDB):
 	os.makedirs(directoryForDB)
 
