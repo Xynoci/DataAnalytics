@@ -47,6 +47,7 @@ pairs(~mpg+disp+drat+wt,data=mtcars, main="Simple Scatterplot Matrix")
 head(movies)
 
 ### Histogram ###
+library(ggplot2)
 ggplot(movies, aes(x=rating))+ geom_histogram(aes(fill = ..count..))
 
 ### violin plot ###
