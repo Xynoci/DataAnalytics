@@ -11,7 +11,7 @@ query <- dbSendQuery(db, "SELECT * FROM employment WHERE Construction > .05" )
 construction <- dbFetch(query, n = -1)
 class(construction)
 ## Just good practice
-dbClearResult(query
+dbClearResult(query)
 
 ### Mean ###
 mean(construction$Construction)
