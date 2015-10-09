@@ -2,6 +2,8 @@ library(ggplot2)
 library(scales)
 library(reshape)
 library(plyr)
+# inspired by: https://learnr.wordpress.com/2010/01/26/ggplot2-quick-heatmap-plotting/
+
 nba <- read.csv("http://datasets.flowingdata.com/ppg2008.csv")
 nba$Name <- with(nba, reorder(Name, PTS))
 head(nba)
