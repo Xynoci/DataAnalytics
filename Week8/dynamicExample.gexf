@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+	<meta lastmodifieddate="2015-09-24">
+		<creator>YOU</creator>
+	</meta>
+	<graph mode="dynamic" defaultedgetype="directed" timeformat="dateTime">
+		<nodes>
+			<node id="aaaa" label="aaaa" start="2015-09-23T18:32:05"/>
+			<node id="bbbb" label="bbbb" start="2015-09-23T18:32:05"/>
+			<node id="cccc" label="cccc" start="2015-09-23T18:32:05"/>
+		</nodes>
+		<edges>
+			<edge source="aaaaa" target="bbbb" start="2015-09-23T18:32:05"/>
+			<edge source="aaaaa" target="cccc" start="2015-09-23T18:32:05"/>
+		</edges>
+	</graph>
+</gexf>
