@@ -14,6 +14,7 @@ post = {"author": "Mike",
 "tags": ["mongodb", "python", "pymongo"],
 "date": datetime.datetime.utcnow()}
 #insert document
+db = c.test_database
 posts = db.posts
 post_id = posts.insert_one(post).inserted_id
 post_id
